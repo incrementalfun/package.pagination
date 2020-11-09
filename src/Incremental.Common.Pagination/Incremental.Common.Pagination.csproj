@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <PackageVersion>0.1.0</PackageVersion>
+        <PackageId>Incremental.Common.Pagination</PackageId>
+        <Title>Common Pagination Extensions</Title>
+        <Authors>Lucas Maximiliano Marino</Authors>
+        <PackageProjectUrl>https://github.com/incrementalspace/package.pagination</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/incrementalspace/package.pagination</RepositoryUrl>
+        <Copyright>Copyright © Lucas Maximiliano Marino 2020</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+</Project>
