@@ -3,18 +3,14 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <GenerateDocumentationFile>True</GenerateDocumentationFile>
-        <PackageVersion>0.1.0</PackageVersion>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageVersion>0.2.0</PackageVersion>
         <PackageId>Incremental.Common.Pagination</PackageId>
         <Title>Common Pagination Extensions</Title>
         <Authors>Lucas Maximiliano Marino</Authors>
-        <PackageProjectUrl>https://github.com/incrementalspace/package.pagination</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/incrementalspace/package.pagination</RepositoryUrl>
-        <Copyright>Copyright © Lucas Maximiliano Marino 2020</Copyright>
+        <PackageProjectUrl>https://github.com/incrementalfun/package.pagination</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/incrementalfun/package.pagination</RepositoryUrl>
+        <Copyright>Copyright © Lucas Maximiliano Marino 2021</Copyright>
     </PropertyGroup>
-
-    <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App" />
-    </ItemGroup>
 
 </Project>
