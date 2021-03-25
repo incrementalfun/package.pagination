@@ -3,7 +3,7 @@ namespace Incremental.Common.Pagination
     /// <summary>
     /// Extension methods for <see cref="PaginatedList{T}"/>.
     /// </summary>
-    public static class PaginatedListExtension
+    public static class PaginatedListExtensions
     {
         /// <summary>
         /// Extracts metadata for a paginated list.
