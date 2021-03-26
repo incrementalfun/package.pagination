@@ -46,7 +46,7 @@ namespace Incremental.Common.Pagination
         /// <param name="count"></param>
         /// <param name="pageNumber"></param>
         /// <param name="pageSize"></param>
-        public PaginatedList(IEnumerable<T> items, int count, int pageNumber, int pageSize)
+        public PaginatedList(IEnumerable<T> items, int count, int pageNumber = 1, int pageSize = 50)
         {
             TotalCount = count;
             PageSize = pageSize;
