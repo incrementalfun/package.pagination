@@ -1,4 +1,6 @@
-﻿using System.Text.Json;
+﻿using System.Linq;
+using System.Net.Http.Headers;
+using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 
 namespace Incremental.Common.Pagination
@@ -18,6 +20,18 @@ namespace Incremental.Common.Pagination
         public static void AddPagination<T>(this IHeaderDictionary header, PaginatedList<T> data)
         {
             header.Add("X-Pagination", JsonSerializer.Serialize(data.ExtractMetadata()));
+        }
+
+        /// <summary>
+        /// Extracts pagination information if available.
+        /// </summary>
+        /// <param name="headers">The <see cref="HttpResponseHeaders"/> where the pagination information may be.</param>
+        /// <returns>Pagination information as <see cref="XPaginationMetadata"/></returns>
+        public static XPaginationMetadata? GetPagination(this HttpResponseHeaders headers)
+        {
+            var pagination = headers.FirstOrDefault(pair => pair.Key == "X-Pagination").Value.FirstOrDefault();
+
+            return pagination is not null ? JsonSerializer.Deserialize<XPaginationMetadata>(pagination) : default;
         }
     }
 }
