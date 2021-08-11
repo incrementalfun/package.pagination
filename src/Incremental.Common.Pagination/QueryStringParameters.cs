@@ -13,14 +13,13 @@ namespace Incremental.Common.Pagination
         /// </summary>
         public int PageNumber { get; set; } = 1;
         
-        
         /// <summary>
         /// Number of items per page requested.
         /// </summary>
         public int PageSize
         {
             get => _pageSize;
-            set => _pageSize = value > MaxPageSize || value <= 0
+            set => _pageSize = value is > MaxPageSize or <= 0
                 ? MaxPageSize 
                 : value;
         }
