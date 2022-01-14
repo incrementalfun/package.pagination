@@ -5,7 +5,7 @@ namespace Incremental.Common.Pagination
     /// </summary>
     public record QueryStringParameters
     {
-        private const int MaxPageSize = 50;
+        private const int MaxPageSize = 100;
         private int _pageSize = 10;
 
         /// <summary>
