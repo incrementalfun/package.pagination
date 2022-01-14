@@ -1,12 +1,12 @@
-# package.pagination
-Common pagination resources.
+# Incremental.Common.Pagination
 
+Common pagination resources.
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2021 <a href="https://lucasmarino.me">Lucas Maximiliano Marino</a>
+Copyright (c) 2022 [Lucas Maximiliano Marino](https://lucasmarino.me)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
