@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Incremental.Common.Pagination
 {
@@ -7,6 +8,7 @@ namespace Incremental.Common.Pagination
     /// Generic paginated list.
     /// </summary>
     /// <typeparam name="T"></typeparam>
+    [JsonConverter(typeof(PaginatedListConverter))]
     public class PaginatedList<T> : List<T>
     {
         /// <summary>
